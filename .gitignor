@@ -1,0 +1,19 @@
+.DS_Store
+.vscode
+.idea
+* .pyc
+local_settings.py
+/.env
+.venv
+Venv
+*.бревно
+объем / *
+! объем / .gitkeep
+бревно/*
+! журнал / .gitkeep
+! общественности / .gitkeep
+! ci_conf / local_settings.py
+! документы / .gitkeep
+db.sqlite3
+пакет-lock.json
+dump.rdb

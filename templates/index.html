@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header>
+    <nav class="nav nav-pills nav-fill">
+        {% for i in categories %}
+            <a class="nav-link" href="{% url 'category' pk=i.id %}">{{ i.title }}</a>
+        {% endfor %}
+    </nav>
+</header>
+
+{% for i in authors %}
+    <h2><a href="{% url 'author' pk=i.id %}">{{ i.name }}</a></h2>
+{% endfor %}
+
+
+
+{% endblock %}
